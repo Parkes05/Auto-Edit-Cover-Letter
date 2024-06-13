@@ -11,7 +11,9 @@ def create_dictionary(name, date, address, type, position):
     DICT = {
         '{company}': name,
         '{date}': date,
-        '{address}': '\n'.join(word for word in address),
+        '{addre}': address[0],
+        '{addres}': address[1],
+        '{address}': address[2],
         '{type}': type,
         '{position}': position,
         '{uposition}': position.upper(),
