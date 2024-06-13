@@ -25,7 +25,7 @@ def replace_words_and_save():
                 for run in elemPara.runs:
                     if key in run.text:
                         run.text = DICT[key]
-        doc.save(f'{PATH}.pdf')
+        doc.save(f'{PATH}.docx')
 
 def convert_to_pdf():
     convert(f'{PATH}.docx', f'{PATH}.pdf')
