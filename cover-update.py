@@ -44,6 +44,8 @@ def gui_for_input():
     label2.grid(column=1, row=2, sticky='w')
     entry2 = Entry(root, width=20)
     entry2.grid(column=2, row=2)
+    btn1 = Button(root, text='?', padx=5, borderwidth=0)
+    btn1.grid(column=3, row=2, padx=5)
 
     label3 = Label(root, text='Company Address')
     label3.grid(column=1, row=3, sticky='w')
@@ -58,8 +60,8 @@ def gui_for_input():
     label4.grid(column=1, row=6, sticky='w')
     entry6 = Entry(root, width=20)
     entry6.grid(column=2, row=6)
-    btn1 = Button(root, text='?', padx=5, borderwidth=0)
-    btn1.grid(column=3, row=6, padx=5)
+    btn2 = Button(root, text='?', padx=5, borderwidth=0)
+    btn2.grid(column=3, row=6, padx=5)
 
     label5 = Label(root, text='Job Position')
     label5.grid(column=1, row=7, sticky='w')
@@ -80,7 +82,8 @@ def gui_for_input():
     btn2 = Button(root, text='confirm', background='blue', command=buttoncommand, foreground='white')
     btn2.grid(columnspan=3, row=8, pady=10)
 
-    tool_tip.bind_widget(btn1, balloonmsg="Institution, Company or University")
+    tool_tip.bind_widget(btn1, balloonmsg="Month Day, Year")
+    tool_tip.bind_widget(btn2, balloonmsg="Institution, Company or University")
 
     root.mainloop()
 
